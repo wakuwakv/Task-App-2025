@@ -53,7 +53,7 @@ public class TaskListActivity extends AppCompatActivity {
             startActivity(new Intent(this, TaskListActivity.class));
         }
 
-        ArrayAdapter<Task> adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, allTasks);
+        ArrayAdapter<Task> adapter = new ArrayAdapter(this, R.layout.custom_task_list,R.id.lblDescription ,allTasks);
         lsTask.setAdapter(adapter);
 
         lsTask.setOnItemClickListener(new AdapterView.OnItemClickListener() {
